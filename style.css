@@ -6,3 +6,71 @@
 a {
     text-decoration: none;
 }
+
+header,
+nav,
+main,
+.welcome,
+footer {
+    width: 100%;
+}
+
+/* ___________________________________________________
+НИЖЕ ВСЕ ЭЛЕМЕНТЫ header ВЫСТРАИВАЮ В ОДНУ ЛИНИЮ (пока как удалось нагуглить, не ругайтесь за неправильное позиционирование)*/
+
+nav {
+    display: inline-block;
+}
+
+.logo__img_arrow {
+    float: left;
+}
+
+.logo__img_text {
+    float: left;
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__list li {
+    display: inline;
+}
+
+/* НИЖЕ ПОЗИЦИОНИРОВАНИЕ ДЛЯ ОСНОВНОГО БЛОКА */
+.welcome {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.welcome_content {
+    width: 522px;
+}
+
+
+/* ________________________________________________ */
+
+/* НИЖЕ ВСЕ ОТСТУПЫ !!!!!!!!!!!!!!!!!!*/
+header {
+    padding-top: 40px;
+    margin: 0px 375px 82px 375px;
+}
+
+main {
+    padding: 0px 429px 103px 352px;
+}
+
+.welcome__heading {
+    padding-top: 63px;
+    margin-bottom: 17px;
+}
+
+.welcome__text {
+    margin-bottom: 37px;
+}
+
+footer {
+    padding: 97px 375px 96px 345px;
+}

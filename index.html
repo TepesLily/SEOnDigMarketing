@@ -11,12 +11,11 @@
 
 <body>
     <header>
-        <div class="logo">
+        <nav>
             <img src="img/logo/logo_arrow.png" width="35px" height="40px" alt="" class="logo__img_arrow">
             <img src="img/logo/logo_GrowBe.png" width="88px" height="30px" alt="" class="logo__img_text">
-        </div>
-        <div class="nav">
-            <ul>
+            <!-- для навигации решила использовать список,т.к. много элементов у меню навигации - не хочется каждый элемент наделять классом, может лучше обращаться через селекторы? -->
+            <ul class="nav__list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Services</a></li>
@@ -28,20 +27,32 @@
                 <a href="#" class="welcome__btn">Get started</a>
                 <li></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <main>
         <section class="welcome">
-            <h1 class="welcome__heading">SEO & Digital Marketing For Your Website.</h1>
-            <p class="welcome__text">Provide all kind of seo services and help to improve
-                seo ranking. Globally incubate standards.</p>
-            <a href="#" class="welcome__btn">Start now</a>
-
-            <a href="#"> <img src="" class="welcome__link_video" alt=""></a>
-            <div class="welcome_img"><img src="" alt=""></div>
+            <section class="welcome_content">
+                <h1 class="welcome__heading">SEO & Digital Marketing For Your Website.</h1>
+                <p class="welcome__text">Provide all kind of seo services and help to improve
+                    seo ranking. Globally incubate standards.</p>
+                <a href="#" class="welcome__btn">Start now</a>
+                <a href="#"><img src="img/icon_video.svg" class="welcome__link_video" width="15px" height="15px" alt="">
+                    Watch video</a>
+            </section>
+            <img src="img/welcome_digital_bgd.png" width="544.81px" height="374.84px" class="welcome_img" alt="">
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section class="footer__logo">
+            <img src="img/logo/logo_liva.png" width="160px" height="50px" alt="">
+            <img src="img/logo/logo_kanba.png" width="160px" height="50px" alt="">
+            <img src="img/logo/logo_amara.png" width="160px" height="50px" alt="">
+            <img src="img/logo/logo_aven.png" width="160px" height="50px" alt="">
+            <img src="img/logo/logo_hexlab.png" width="160px" height="50px" alt="">
+            <img src="img/logo/logo_kanba.png" width="160px" height="50px" alt="">
+        </section>
+
+    </footer>
 </body>
 
 </html>
