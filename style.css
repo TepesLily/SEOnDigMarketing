@@ -3,56 +3,15 @@
     padding: 0;
 }
 
+
 a {
     text-decoration: none;
 }
 
-header,
-nav,
-main,
-.welcome,
-footer {
-    width: 100%;
+body {
+    margin: 0 auto;
 }
 
-/* ___________________________________________________
-НИЖЕ ВСЕ ЭЛЕМЕНТЫ header ВЫСТРАИВАЮ В ОДНУ ЛИНИЮ (пока как удалось нагуглить, не ругайтесь за неправильное позиционирование)*/
-
-nav {
-    display: inline-block;
-}
-
-.logo__img_arrow {
-    float: left;
-}
-
-.logo__img_text {
-    float: left;
-}
-
-.nav__list {
-    list-style: none;
-}
-
-.nav__list li {
-    display: inline;
-}
-
-/* НИЖЕ ПОЗИЦИОНИРОВАНИЕ ДЛЯ ОСНОВНОГО БЛОКА */
-.welcome {
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
-}
-
-.welcome_content {
-    width: 522px;
-}
-
-
-/* ________________________________________________ */
-
-/* НИЖЕ ВСЕ ОТСТУПЫ !!!!!!!!!!!!!!!!!!*/
 header {
     padding-top: 40px;
     margin: 0px 375px 82px 375px;
@@ -73,4 +32,61 @@ main {
 
 footer {
     padding: 97px 375px 96px 345px;
+}
+
+/* стилизация */
+.nav__list {
+    list-style: none;
+}
+
+nav a {
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+}
+
+nav li:first-child a {
+    color: #F25822;
+
+}
+
+.welcome__btn {
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 120px;
+    height: 40px;
+    background: #F25822;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+}
+
+.header__logo_text {
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    gap: 0px;
+}
+
+.header__logo_be {
+    color: #F25822;
+}
+
+.welcome__heading {
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.welcome__text {
+    font-size: 20px;
+    line-height: 23px;
+    color: #888888;
+}
+
+.welcome__link_video {
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #AAAAAA;
 }

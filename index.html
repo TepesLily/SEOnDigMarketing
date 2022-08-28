@@ -11,10 +11,15 @@
 
 <body>
     <header>
+        <div class="header__logo">
+            <img src="img/logo/logo_arrow.png" width="35px" height="40px" alt="" class="header__logo_img">
+            <div class="header__logo_text">
+                <span class="header__logo_grow">Grow</span>
+                <span class="header__logo_be">Be</span>
+            </div>
+
+        </div>
         <nav>
-            <img src="img/logo/logo_arrow.png" width="35px" height="40px" alt="" class="logo__img_arrow">
-            <img src="img/logo/logo_GrowBe.png" width="88px" height="30px" alt="" class="logo__img_text">
-            <!-- для навигации решила использовать список,т.к. много элементов у меню навигации - не хочется каждый элемент наделять классом, может лучше обращаться через селекторы? -->
             <ul class="nav__list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
@@ -24,9 +29,8 @@
                 <li><a href="#">Team </a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                <a href="#" class="welcome__btn">Get started</a>
-                <li></li>
             </ul>
+            <button class="welcome__btn">Get started</button>
         </nav>
     </header>
     <main>
@@ -35,9 +39,13 @@
                 <h1 class="welcome__heading">SEO & Digital Marketing For Your Website.</h1>
                 <p class="welcome__text">Provide all kind of seo services and help to improve
                     seo ranking. Globally incubate standards.</p>
-                <a href="#" class="welcome__btn">Start now</a>
-                <a href="#"><img src="img/icon_video.svg" class="welcome__link_video" width="15px" height="15px" alt="">
-                    Watch video</a>
+                <div class="welcome__btns">
+                    <button class="welcome__btn">Start now</button>
+                    <img src="img/icon_video.svg" width="15px" height="15px" alt="">
+                    <a href="#" class="welcome__link_video">
+                        Watch video</a>
+
+                </div>
             </section>
             <img src="img/welcome_digital_bgd.png" width="544.81px" height="374.84px" class="welcome_img" alt="">
         </section>
