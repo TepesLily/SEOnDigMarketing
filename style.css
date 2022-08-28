@@ -114,18 +114,6 @@ nav li:first-child a {
     border: none;
 }
 
-.header__logo_text {
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0px;
-}
-
-.header__logo_be {
-    color: #F25822;
-}
-
 .welcome__heading {
     font-size: 60px;
     line-height: 70px;
@@ -166,17 +154,7 @@ nav li:first-child a {
     padding-bottom: 2px;
 }
 
-.header__logo {
-    display: flex;
-    justify-content: start;
-    gap: 14px;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
-.header__logo_text {
-    font-weight: bold;
-}
 
 nav {
     display: flex;
