@@ -1,3 +1,51 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy/gilroy-regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('fonts/Gilroy/gilroy-regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gilroy/gilroy-regular.woff2') format('woff2'),
+        url('fonts/Gilroy/gilroy-regular.woff') format('woff'),
+        url('fonts/Gilroy/gilroy-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy/gilroy-bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('fonts/Gilroy/gilroy-bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gilroy/gilroy-bold.woff2') format('woff2'),
+        url('fonts/Gilroy/gilroy-bold.woff') format('woff'),
+        url('fonts/Gilroy/gilroy-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('fonts/Gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('fonts/Gilroy/Gilroy-Semibold.woff') format('woff'),
+        url('fonts/Gilroy/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('fonts/Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+        url('fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +57,23 @@ a {
 }
 
 body {
+    font-family: 'Gilroy';
+    font-weight: normal;
     margin: 0 auto;
+    max-width: 1300px;
+
 }
 
 header {
     padding-top: 40px;
-    margin: 0px 375px 82px 375px;
+    margin-bottom: 82px;
+    display: flex;
+    justify-content: space-between;
 }
 
 main {
-    padding: 0px 429px 103px 352px;
+    padding-bottom: 103px;
+    width: fit-content;
 }
 
 .welcome__heading {
@@ -31,13 +86,10 @@ main {
 }
 
 footer {
-    padding: 97px 375px 96px 345px;
+
+    padding: 97px 0px 96px 0px;
 }
 
-/* стилизация */
-.nav__list {
-    list-style: none;
-}
 
 nav a {
     font-size: 14px;
@@ -66,6 +118,7 @@ nav li:first-child a {
     font-size: 24px;
     line-height: 28px;
     display: flex;
+    flex-wrap: nowrap;
     gap: 0px;
 }
 
@@ -76,12 +129,17 @@ nav li:first-child a {
 .welcome__heading {
     font-size: 60px;
     line-height: 70px;
+    font-family: 'Gilroy';
+    font-weight: bold;
+    width: 522px;
+
 }
 
 .welcome__text {
     font-size: 20px;
     line-height: 23px;
     color: #888888;
+    width: 466px;
 }
 
 .welcome__link_video {
@@ -89,4 +147,63 @@ nav li:first-child a {
     line-height: 18px;
 
     color: #AAAAAA;
+}
+
+.welcome .welcome__btn {
+    font-size: 15px;
+    line-height: 18px;
+    margin-right: 12px;
+
+}
+
+.nav__list li {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+}
+
+.nav__a_features__img_arrow {
+    padding-bottom: 2px;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: start;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__logo_text {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+}
+
+.welcome__btns {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 17px;
+}
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
 }
